@@ -1,6 +1,6 @@
 [package]
 name = "libtuntap"
-version = 0.0.1
+version = "0.0.1"
 edition = "2021"
 authors = ["Join.Gong<joinhack@gmail.com>", "Derek Anderson<derek@txlabs.org>"]
 description = "This crate is the tuntap implement."

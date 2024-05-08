@@ -1,0 +1,16 @@
+[package]
+name = "libtuntap"
+version = 0.0.1
+edition = "2021"
+authors = ["Join.Gong<joinhack@gmail.com>", "Derek Anderson<derek@txlabs.org>"]
+description = "This crate is the tuntap implement."
+license = "MIT/Apache-2.0"
+repository = "https://github.com/blocklessnetwork/libtuntap"
+
+[dependencies]
+libc = "0.2"
+thiserror = "1"
+futures = "0.3"
+
+[target.'cfg(any(target_os = "linux", target_os = "macos"))'.dependencies]
+ioctl = { version = "0.6", package = "ioctl-sys" }
